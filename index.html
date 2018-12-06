@@ -2,46 +2,56 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>GifTastic</title>
+    <title>GifTastic X-Men</title>
     <!-- Reset CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Google Font Bangers -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-        <div class="container">
-                <div class="jumbotron text-center">
-                    <h1>X-men in GIF form</h1>
-                </div>
+
+    <!-- Main Container -->
+    <div class="container-fluid">
+
+        <!-- Jumbotron Header -->
+        <div class="jumbotron bg-primary text-warning text-center">
+            <h1>X-Men in GIF form</h1>
+        </div>
+        
+        <!-- Row containing the buttons once they are generated -->
+        <div class="row">
+            <div class="col-xs-12" id="button-view"></div>
+        </div>
+        
+        <!-- Row to add more X-Men -->
+        <div class="row">
+            <div class="col-xs-12">
+                <form id="form">
+                    <label for="user-input">Add an X-man (person)</label>
+                    <br>
+                    <input type="text" id="xperson-input" placeholder="Anyone but Gambit">
+                    <input id="add-xperson" type="submit" value="Submit" class="btn btn-primary m-1">
+                </form>
+            </div>
+        </div>
             
-                <div class="row">
-                    <div class="col-xs-12" id="button-view"></div>
-                </div>
+        <!-- Row to contain the GIFs when they are called -->
+        <div class="row">
+            <div class="col-xs-12" id="gifPlace"></div>
+        </div>
             
-                <div class="row">
-                    <div class="col-xs-12">
-                        <form id="form">
-                            <label for="user-input">Add an X-man (person)</label><br>
-                            <input type="text" id="xperson-input">
-                            <input id="add-xperson" type="submit" value="Submit" class="btn btn-default m-1">
-                        </form>
-                    </div>
-                </div>
-            
-                <div class="row">
-                    <div class="col-xs-12" id="gifPlace"></div>
-                </div>
-            
-            </div> 
+    </div> 
 
 
-        <!-- jQuery -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-        <!-- Script -->
-        <script type="text/javascript" src="./assets/javascript/app.js"></script>
+    <!-- Script -->
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
         
 </body>
 </html>

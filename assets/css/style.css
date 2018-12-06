@@ -1,9 +1,30 @@
+body {
+    font-family: 'Bangers', cursive;
+    background-color: lightblue;
+}
+
+.container-fluid {
+    width: 90%;
+}
+
+.jumbotron, h1 {
+    font-size: 60px;
+}
+
+.row {
+    margin: 0.5%;
+}
+
+button, form, input {
+    letter-spacing: 1px;
+}
+
 .gif {
     max-height: 200px;
     max-width: auto;
 }
 
 .holder {
-    float:left;
+    float: left;
     margin: 5px;
 }
