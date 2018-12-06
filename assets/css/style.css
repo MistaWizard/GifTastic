@@ -1,0 +1,9 @@
+.gif {
+    max-height: 200px;
+    max-width: auto;
+}
+
+.holder {
+    float:left;
+    margin: 5px;
+}
