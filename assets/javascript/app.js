@@ -19,7 +19,7 @@ function displayGIF() {
         var results = response.data;
         // console.log(results);
         $("#gifPlace").empty();
-        for (var j =0; j < limit; j++) {
+        for (var j = 0; j < limit; j++) {
 
             // Create our div to hold our GIFs
             var displayDiv = $("<div>");
